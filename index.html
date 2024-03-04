@@ -12,12 +12,10 @@
 
 <div class="container" style="padding: 1em">
     <div id="textBox">
-        <h1>Nimetus</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur eget lectus mi. Donec lorem magna,
-            elementum ac dui in, posuere pharetra odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur eget lectus mi. Donec lorem magna, elementum ac dui in, posuere pharetra odio.</p>
+        <h1>Pesukarud</h1>
+        <p>"Pesukaru" on eesti keeles kasutatav sõna, mis tähendab karu. Karud kuuluvad imetajate klassi ja on suurte kaslaste hulka kuuluvad loomad. Eestis on kaks karuliiki: pruunkaru ja mustakaru. Pruunkaru on Eesti ainus looduslikult esinev karuliik, samas kui mustakaru on pärit Põhja-Ameerikast.</p>
     </div>
-    <img id="photo" src="images/img.png">
+    <img id="photo" src="images/pesukarud.webp">
 </div>
 
 <!-- Lõbusad faktid -->
@@ -25,21 +23,22 @@
 <div class="container">
     <div class="card">
         <!-- Tee see osa ise! -->
+        <p style="font-size:20px">"Pesukarud on tõelised "näljahädalised" - nad võivad muuta prügikastiavamise tõeliseks kunstivormiks ja kui nad avastavad, et oled äsja toidupoest koju tulnud, on nad valmis esinema isegi tantsunumbreid, et saada oma osa snäkkidest!" </p>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
+        <p style="font-size:20px">Pesukarude varjatud talent - nad võivad peale prügikastide ja rõdude ründamise olla suurepärased ka varieteelavastustel! Neil on alati olemas see kaval pilk ja veetlev võlu, mis muudab nad suurepärasteks publikumagnetiteks. Ehk saab järgmine suur staar pesukaru? </p>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
+        <p style="font-size:20px">Kas teadsid, et pesukarud on nagu looduse enda taskulambid - öösiti säravad nad pimeduses tänu oma silmamärkidele nagu väikesed pesukaru-superkangelased! Need armsad välimusega pesukarud pole aga sugugi nii süütud kui näivad. Nende osavus prügikastides toidu leidmisel võib muuta nad tõeliseks linnaelu ekspertideks - nad teavad, kuidas leida parimaid snäkke linna ööelust! </p>
     </div>
 </div>
 
 <!-- Video -->
 
 <div class="container" style="flex-flow: column">
-    <iframe id="video" src="https://www.youtube.com/embed/WLT7TDGzXGU?si=z5_UTSHfVFkCDm6X" title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hbafShGaYgM?si=cB3Ss3crCaiuh-Ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <!-- max-width paneb ette piiri, et kui pikk võib tekst olla -->
     <p style="max-width: 55em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a odio vel lorem congue
         facilisis. Praesent consequat leo arcu, in gravida erat fringilla in. Pellentesque dictum accumsan leo, in
@@ -54,7 +53,19 @@
         <!-- Tee see osa ise! -->
     </div>
 </div>
-
+<button id="supraise">Vajuta MIND!!</button>
 </body>
-    
+<script>
+    let button = document.getElementById("supraise");
+    button.addEventListener("click", function (){
+        let body = document.body;
+        if(body.style.background.toLowerCase() == "pink"){
+            body.style.background == "black"
+        } else {
+            body.style.background = "pink";
+            document.p.style.color = "white"
+        }
+
+    )
+</script>
 </html>
